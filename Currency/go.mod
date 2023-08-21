@@ -1,4 +1,4 @@
-module Currency
+module golangProjects\Microservice
 
 go 1.18
 

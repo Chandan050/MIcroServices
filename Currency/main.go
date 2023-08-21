@@ -13,7 +13,6 @@ import (
 func main() {
 	// 1. Create a new client with the default settings:
 	log1 := log.Default()
-	protos
 
 	gs := grpc.NewServer()
 	cs := server.NewCurrency(log1)
