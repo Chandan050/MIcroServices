@@ -1,15 +1,16 @@
 syntax = "proto3";
 
 option go_package = "./protos";
-service grpc{
-    rpc GetRate(RateRequest) returns(RateResponse);
-}
-  
-message RateRequest{
-    string Base = 1;
-    string Destination = 2;
-}  
 
-message RateResponse{
+service Currency{
+    rpc GetRate(RateRequest) returns (Response);
+}
+
+message RateRequest{
+    string Base =1;
+    string Destination = 2;
+}
+
+message Response{
     float Rate = 1;
 }
